@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>OCR</title>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<script>
+
+    //Sub folder for test image caalled "testImages".
+    function subform(e){
+        e.preventDefault();
+
+        let forma = e.target;
+        let myformData = new FormData(); 
+        myformData.append('image', forma.elements[0].files[0]);
+        console.log(myformData);
+        
+        $.ajax({
+
+            url: "/myocr/index.php",
+            enctype: 'multipart/form-data',
+            type: 'POST',
+            data: myformData,
+            contentType: false,
+            processData: false,
+            success: (response) => { 
+
+                console.log("success");
+                //console.log(response);
+                let json = JSON.parse(response);
+                console.log(json);
+                let src = json.base64Str;
+                document.getElementById("myImg").src = src;
+                
+            },
+            error: (response) => {
+                console.log("error");
+                console.log(response);
+            }
+
+        });
+
+    }
+
+</script>
+
+<form onsubmit="subform(event)">
+  <label for="image">Select image:</label>
+  <input type="file" id="image" name="image"><br>
+  <input type="submit">
+</form>
+
+<img src="" id="myImg" alt="slika" style="width: 700px;height: 200px;">
+</body>
+</html>
