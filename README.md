@@ -23,7 +23,7 @@
  - Seventh and last one is type / extension of uploaded image.
 
  - There is `testImages` sub folder which is supplied with test images based on different TD standards.
- 
+
  An example of how returned json looks, logged into console:
 
  ![Example](json.png "Example")
@@ -33,7 +33,7 @@ Additional links:
  - [Tesseract1](https://github.com/tesseract-ocr/tesseract)
  - [TessDocs](https://tesseract-ocr.github.io/tessdoc/Home.html)
  - [TessWiki](https://github.com/UB-Mannheim/tesseract/wiki)
- - [TessWiki](https://digi.bib.uni-mannheim.de/tesseract/) which you must install on server machine for `Thiaggo php wrapper` to utilize it.
+ - [TesseractDownload](https://digi.bib.uni-mannheim.de/tesseract/) which you must install on server machine for `Thiaggo php wrapper` to utilize it.
 
 #### Notice:
 
