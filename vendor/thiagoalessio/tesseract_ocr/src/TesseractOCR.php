@@ -1,4 +1,6 @@
-<?php namespace thiagoalessio\TesseractOCR;
+<?php 
+
+namespace thiagoalessio\TesseractOCR;
 
 use thiagoalessio\TesseractOCR\Command;
 use thiagoalessio\TesseractOCR\Option;

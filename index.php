@@ -1,18 +1,4 @@
 <?php
-/*
-Links:
-    1. https://github.com/thiagoalessio/tesseract-ocr-for-php
-    2. https://github.com/tesseract-ocr/tesseract
-    3. https://tesseract-ocr.github.io/tessdoc/Home.html
-    4. https://github.com/UB-Mannheim/tesseract/wiki
-    5. https://digi.bib.uni-mannheim.de/tesseract/
-
-Notice:
-    1. Add C:\Program Files\Tesseract-OCR to env variable.
-
-Upload: 
-    1. https://www.w3schools.com/php/php_file_upload.asp
-*/
 
     require_once('./vendor/autoload.php');
     
